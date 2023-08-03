@@ -1,0 +1,17 @@
+{
+  "header": {
+    "signup": "Sign Up",
+    "auctions": "Auctions",
+    "sell": "Sell a Car",
+    "about": "About Dream Bids"
+  },
+  "counterBid": {
+    "maxBid": "Bid",
+    "highestBid": "Highest Bid",
+    "bids": "Bids",
+    "comments": "Comments"
+  },
+  "text": {
+    "placeBid": "Place Bid"
+  }
+}

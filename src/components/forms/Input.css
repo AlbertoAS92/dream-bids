@@ -1,0 +1,6 @@
+input:focus-visible,
+input:focus,
+input:focus-within,
+input:active {
+  outline: none;
+}

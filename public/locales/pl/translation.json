@@ -1,0 +1,17 @@
+{
+  "header": {
+    "signup": "Zarejestruj się",
+    "auctions": "Aukcje",
+    "sell": "Sprzedaj Samochód",
+    "about": "O Dream Bids"
+  },
+  "counterBid": {
+    "maxBid": "Oferta",
+    "highestBid": "Najwyższa oferta",
+    "bids": "Oferty",
+    "comments": "Komentarzy"
+  },
+  "text": {
+    "placeBid": "Złożyć Ofertę"
+  }
+}

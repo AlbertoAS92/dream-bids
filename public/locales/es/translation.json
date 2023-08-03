@@ -1,0 +1,17 @@
+{
+  "header": {
+    "signup": "Registro",
+    "auctions": "Subastas",
+    "sell": "Vender un Coche",
+    "about": "Acerca de Dream Bids"
+  },
+  "counterBid": {
+    "maxBid": "Puja",
+    "highestBid": "Puja más alta",
+    "bids": "Pujas",
+    "comments": "Comentarios"
+  },
+  "text": {
+    "placeBid": "Pujar"
+  }
+}

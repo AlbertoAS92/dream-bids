@@ -1,0 +1,21 @@
+.CarListItem:hover > .CarListItem-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.2;
+  border-radius: 0.125rem;
+}
+
+.CarListItem:hover > .CarListItem-starred {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: inline;
+  color: var(--secondary-color);
+  font-size: 25px;
+}
+
+.CarListItem:hover > .CarListItem-starred:hover {
+  color: white;
+}

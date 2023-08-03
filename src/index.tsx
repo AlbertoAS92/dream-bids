@@ -1,15 +1,53 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM, { Root } from 'react-dom/client';
+import {
+  createBrowserRouter,
+  RouteObject,
+  RouterProvider,
+} from 'react-router-dom';
 
-const root = ReactDOM.createRoot(
+import './index.css';
+import reportWebVitals from './reportWebVitals';
+import './i18n';
+import Auctions from './pages/auctions/Auctions';
+import SellCar from './pages/sell-car/SellCar';
+import About from './pages/about/About';
+import { AppRoutePath } from './utils/app.utils';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { AuctionCar } from './pages/auctions/pages/AuctionCar';
+
+const queryClient = new QueryClient();
+
+const AppRoutes: RouteObject[] = [
+  {
+    path: AppRoutePath.Auctions,
+    element: <Auctions />,
+    // loader: auctionsLoader(queryClient),
+  },
+  {
+    path: `${AppRoutePath.AuctionByCar}/:carId`,
+    element: <AuctionCar />,
+  },
+  {
+    path: AppRoutePath.SellCar,
+    element: <SellCar />,
+  },
+  {
+    path: AppRoutePath.About,
+    element: <About />,
+  },
+];
+
+const router = createBrowserRouter(AppRoutes);
+
+const root: Root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
   </React.StrictMode>
 );
 

@@ -1,0 +1,7 @@
+.CounterBid {
+  color: var(--secondary-color);
+}
+
+.CounterBid--countdown {
+  background-color: var(--main-color);
+}
